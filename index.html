@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Portfolio website</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:intal,wght@0,100;0,200;0,300;0,400;0,500;0;600;0,700;1,100;1,200;1,300;1,400;1,500,1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!----hero section start---->
+    <div class="hero">
+      <nav>
+        <h2 class="logo">Portf<span>olio</span></h2>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Skills</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+        <a href="#" class="btn">Subscribe</a>
+        <div class="body">
+          <button
+            onclick="document.getElementById('id01').style.display='block'"
+            style="width: auto"
+          >
+            Login
+          </button>
+
+          <div id="id01" class="modal">
+            <form
+              class="modal-content animate"
+              action="/action_page.php"
+              method="post"
+            >
+              <div class="imgcontainer">
+                <span
+                  onclick="document.getElementById('id01').style.display='none'"
+                  class="close"
+                  title="Close Modal"
+                  >&times;</span
+                >
+                <img src="images/img_avatar2.png" alt="Avatar" class="avatar" />
+              </div>
+
+              <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input
+                  type="text"
+                  placeholder="Enter Username"
+                  name="uname"
+                  required
+                />
+
+                <label for="psw"><b>Password</b></label>
+                <input
+                  type="password"
+                  placeholder="Enter Password"
+                  name="psw"
+                  required
+                />
+
+                <button type="submit">Login</button>
+                <label>
+                  <input type="checkbox" checked="checked" name="remember" />
+                  Remember me
+                </label>
+              </div>
+
+              <div class="container" style="background-color: #f1f1f1">
+                <button
+                  type="button"
+                  onclick="document.getElementById('id01').style.display='none'"
+                  class="cancelbtn"
+                >
+                  Cancel
+                </button>
+                <span class="psw">Forgot <a href="#">password?</a></span
+                ><br />
+                <span class="sign"
+                  >New Account <a href="./sin_up.html">Sign Up?</a></span
+                >
+              </div>
+            </form>
+          </div>
+
+          <script>
+            // Get the modal
+            var modal = document.getElementById("id01");
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function (event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            };
+          </script>
+        </div>
+      </nav>
+
+      <div class="content">
+        <h4>Hello. my name is</h4>
+        <h1>Mohammed <span>Ismail</span></h1>
+        <h3>I'am website Developer.</h3>
+        <div class="newslatter">
+          <form>
+            <input
+              type="email"
+              name="email"
+              id="mail"
+              placeholder="Enter Your Email"
+            />
+            <input type="submit" name="submit" value="Lets Start" />
+          </form>
+        </div>
+      </div>
+    </div>
+    <!----About---->
+    <section class="about">
+      <div class="main">
+        <img src="images/orsrc44525.jpg" alt="Pleas try agine" />
+        <div class="about-text">
+          <h2>About Me</h2>
+          <h5>
+            Developer, <span>Designer</span> and Husband for a beautiful girl
+          </h5>
+          <p>
+            I am a front-end wed Developer. I can provide clean code and pixel
+            perfect deisgn. I also make the website more & more interactive with
+            web animation. I can provideclean teaching coures for peopel how
+            want to learne .A responsive design make your website asccessible to
+            all users, regardless of their device.
+          </p>
+          <button type="button">Let's Talk</button>
+        </div>
+        >
+      </div>
+    </section>
+    <!----serve section start---->
+    <div class="service">
+      <div class="title">
+        <h2>Our Services</h2>
+      </div>
+      <div class="box">
+        <div class="card">
+          <i class="fa-solid fa-bars"></i>
+          <h5>Web Developer</h5>
+          <div class="par">
+            <p>
+              Ever wesite should be built with two primar goals: Firstly, i
+              needs to work across all devices. Secondly, it needs to be fast as
+              possible
+            </p>
+
+            <p style="text-align: center">
+              <a class="button" href="#">Read More</a>
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <i class="fa-solid fa-user"></i>
+          <h5>Web Developer</h5>
+          <div class="par">
+            <p>
+              Ever wesite should be built with two primar goals: Firstly, i
+              needs to work across all devices. Secondly, it needs to be fast as
+              possible
+            </p>
+
+            <p style="text-align: center">
+              <a class="button" href="#">Read More</a>
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <i class="fa-solid fa-bell"></i>
+          <h5>Web Developer</h5>
+          <div class="par">
+            <p>
+              Ever wesite should be built with two primar goals: Firstly, i
+              needs to work across all devices. Secondly, it needs to be fast as
+              possible
+            </p>
+
+            <p style="text-align: center">
+              <a class="button" href="#">Read More</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-------Contact Me-------->
+    <div class="contact-me">
+      <p>Let Me Get You A Beautiful website.</p>
+      <a class="button" href="#">Hire Me</a>
+    </div>
+    <!------footer start------->
+    <footer>
+      <p>Mahammed Ahmed</p>
+      <p>
+        For More Info about Web, HTML, CSS, and coding tutorial -please click on
+        any platform link below to Subscribe to my channel:
+      </p>
+      <div class="social">
+        <a
+          href="https://facebook.com"
+          target="_blank"
+          title="follow me on facebook "
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+        <a
+          href="https://instatelegram.com"
+          target="_blank"
+          title="follow me on instatelegram"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a
+          href="https://web.telegram.org/k/"
+          target="_blank"
+          title="Jone my telegram channel "
+          ><i class="fa-brands fa-telegram"></i
+        ></a>
+        <a
+          href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWrRvwTkzNgbSLkWkWsPVMRlnRHfbTfsNJHNWfcWXZxSxFvlsKDnMNtRwzsPPpWFGmXMCktBL"
+          target="_blank"
+          title="Email with me "
+          ><i class="fa-solid fa-envelope"></i
+        ></a>
+        <a
+          href="https://web.whatsapp.com/"
+          target="_blank"
+          title="chat with me on whatsapp "
+          ><i class="fa-brands fa-whatsapp"></i
+        ></a>
+      </div>
+      <p class="end">CopyRight By Mahammed Ismail Business Group</p>
+    </footer>
+  </body>
+</html>
